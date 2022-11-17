@@ -16,4 +16,3 @@ class AI(Player):
         pass      
     
     
-    #self.name = input("What would you like to name the computer? ")

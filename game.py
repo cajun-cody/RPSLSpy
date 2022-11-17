@@ -11,6 +11,7 @@ class Game:
         self.welcome_greeting()
         self.game_type()
         self.game_round()
+        self.game_winner()
 
     def welcome_greeting(self):
         print('\nWelcome to Rock, Paper, Scissors, Lizard, Spock!')
@@ -26,9 +27,11 @@ class Game:
         print('Spock vaporizes Rock')
         print('and as it always has,')
         print('Rock crushes Scissors\n')
-      
+        print('Best of 3 Wins!')
+
+
     def game_type(self):
-        game_type = int(input("Choose game type: (1) Player vs Player or (2) Player vs AI" ))
+        game_type = int(input("Choose game type: (1) Player vs Player or (2) Player vs AI  "))
         if game_type == 1:
             self.player_two = Human()
             self.player_one.choose_name()
@@ -97,6 +100,10 @@ class Game:
                 print(f"{self.player_two.name} wins round.")
 
           
-
+    def game_winner(self):
+        if self.player_one.score >= 2:
+            print(f"\n{self.player_one.name.title()} Wins Game!")
+        elif self.player_two.score >= 2:
+            print(f"\n{self.player_two.name.title()} Wins Game!")
 
    
