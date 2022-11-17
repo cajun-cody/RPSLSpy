@@ -52,43 +52,43 @@ class Game:
             if self.player_one.chosen_gesture == self.player_two.chosen_gesture:
                 print("Round Tied!")
 
-            elif self.player_one.chosen_gesture == self.player_one.chosen_gesture[0] and self.player_two.chosen_gesture == self.player_two.chosen_gesture[2]:
+            elif self.player_one.chosen_gesture == self.player_one.gestures[0] and self.player_two.chosen_gesture == self.player_two.gestures[2]:
                 self.player_one.score += 1
                 print(f"{self.player_one.name} wins round.")
                 
-            elif self.player_one.chosen_gesture == self.player_one.chosen_gesture[1] and self.player_two.chosen_gesture == self.player_two.chosen_gesture[0]:
+            elif self.player_one.chosen_gesture == self.player_one.gestures[1] and self.player_two.chosen_gesture == self.player_two.gestures[0]:
                 self.player_one.score += 1
                 print(f"{self.player_one.name} wins round.")
                 
-            elif self.player_one.chosen_gesture == self.player_one.chosen_gesture[2] and self.player_two.chosen_gesture == self.player_two.chosen_gesture[1]:
+            elif self.player_one.chosen_gesture == self.player_one.gestures[2] and self.player_two.chosen_gesture == self.player_two.gestures[1]:
                 self.player_one.score += 1
                 print(f"{self.player_one.name} wins round.")
                 
-            elif self.player_one.chosen_gesture == self.player_one.chosen_gesture[3] and self.player_two.chosen_gesture == self.player_two.chosen_gesture[4]:
+            elif self.player_one.chosen_gesture == self.player_one.gestures[3] and self.player_two.chosen_gesture == self.player_two.gestures[4]:
                 self.player_one.score += 1
                 print(f"{self.player_one.name} wins round.")
                 
-            elif self.player_one.chosen_gesture == self.player_one.chosen_gesture[4] and self.player_two.chosen_gesture == self.player_two.chosen_gesture[2]:
+            elif self.player_one.chosen_gesture == self.player_one.gestures[4] and self.player_two.chosen_gesture == self.player_two.gestures[2]:
                 self.player_one.score += 1
                 print(f"{self.player_one.name} wins round.")
                 
-            elif self.player_one.chosen_gesture == self.player_one.chosen_gesture[0] and self.player_two.chosen_gesture == self.player_two.chosen_gesture[3]:
+            elif self.player_one.chosen_gesture == self.player_one.gestures[0] and self.player_two.chosen_gesture == self.player_two.gestures[3]:
                 self.player_one.score += 1
                 print(f"{self.player_one.name} wins round.")
                 
-            elif self.player_one.chosen_gesture == self.player_one.chosen_gesture[1] and self.player_two.chosen_gesture == self.player_two.chosen_gesture[4]:
+            elif self.player_one.chosen_gesture == self.player_one.gestures[1] and self.player_two.chosen_gesture == self.player_two.gestures[4]:
                 self.player_one.score += 1
                 print(f"{self.player_one.name} wins round.")
                 
-            elif self.player_one.chosen_gesture == self.player_one.chosen_gesture[2] and self.player_two.chosen_gesture == self.player_two.chosen_gesture[3]:
+            elif self.player_one.chosen_gesture == self.player_one.gestures[2] and self.player_two.chosen_gesture == self.player_two.gestures[3]:
                 self.player_one.score += 1
                 print(f"{self.player_one.name} wins round.")
 
-            elif self.player_one.chosen_gesture == self.player_one.chosen_gesture[3] and self.player_two.chosen_gesture == self.player_two.chosen_gesture[1]:
+            elif self.player_one.chosen_gesture == self.player_one.gestures[3] and self.player_two.chosen_gesture == self.player_two.gestures[1]:
                 self.player_one.score += 1
                 print(f"{self.player_one.name} wins round.")
 
-            elif self.player_one.chosen_gesture == self.player_one.chosen_gesture[4] and self.player_two.chosen_gesture == self.player_two.chosen_gesture[0]:
+            elif self.player_one.chosen_gesture == self.player_one.gestures[4] and self.player_two.chosen_gesture == self.player_two.gestures[0]:
                 self.player_one.score += 1
                 print(f"{self.player_one.name} wins round.")
             
