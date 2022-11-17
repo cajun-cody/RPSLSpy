@@ -4,7 +4,7 @@ from human import Human
 class Game:
     def __init__(self) -> None:
         self.player_one = Human()
-        self.player_two = AI()
+        self.player_two = None
         pass
 
     def run_game(self):
@@ -27,25 +27,34 @@ class Game:
         print('Spock vaporizes Rock')
         print('and as it always has,')
         print('Rock crushes Scissors\n')
-        print('Best of 3 Wins!')
+        print('Best of 3 Wins!\n')
 
-    # Choose to play with another Human or the AI
+    # Choose to play with another Human, the AI or AI vs AI
     def game_type(self):
-        game_type = int(input("Choose game type: (1) Player vs Player or (2) Player vs AI  "))
+        game_type = int(input("Choose game type: (1) Player vs Player or (2) Player vs AI or (3) AI vs AI?  "))
         if game_type == 1:
+            self.player_one = Human()
             self.player_two = Human()
             self.player_one.choose_name()
             self.player_two.choose_name()
             print(f"Player 1's name is {self.player_one.name}.")
             print(f"Player 2's name is {self.player_two.name}.")
-        else:
-            game_type == 2
+
+        elif game_type == 2:
+            self.player_one = Human()
             self.player_two = AI()
-            self.player_two.choose_name()
             self.player_one.choose_name()
+            self.player_two.choose_name()
             print(f"Player 1's name is {self.player_one.name}.")
             print(f"Player 2's name is {self.player_two.name}.")
-   
+
+        elif game_type == 3:
+            self.player_one = AI()
+            self.player_two = AI()
+            self.player_one.choose_name()
+            self.player_two.choose_name()
+            print(f"Player 1's name is {self.player_one.name}.")
+            print(f"Player 2's name is {self.player_two.name}.")
     
     # While loop to run through each round with either 1 point added for a win or 0 points for tie. Loop ends 
     # when one player reaches 2 points. 
