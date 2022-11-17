@@ -10,6 +10,7 @@ class AI(Player):
         self.name = input("Enter computer name: ")
         pass    
 
+    # AI gesture chooses random
     def choose_gesture(self):
         self.chosen_gesture = choice(self.gestures)
         print(f'{self.name} throws {self.chosen_gesture}.')

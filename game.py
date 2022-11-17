@@ -29,7 +29,7 @@ class Game:
         print('Rock crushes Scissors\n')
         print('Best of 3 Wins!')
 
-
+    # Choose to play with another Human or the AI
     def game_type(self):
         game_type = int(input("Choose game type: (1) Player vs Player or (2) Player vs AI  "))
         if game_type == 1:
@@ -47,6 +47,8 @@ class Game:
             print(f"Player 2's name is {self.player_two.name}.")
    
     
+    # While loop to run through each round with either 1 point added for a win or 0 points for tie. Loop ends 
+    # when one player reaches 2 points. 
     def game_round(self):
         while self.player_one.score < 2 and self.player_two.score < 2:
             print('\nNew Round\n')
@@ -99,7 +101,7 @@ class Game:
                 self.player_two.score += 1
                 print(f"{self.player_two.name} wins round.")
 
-          
+    # Winner decided when one player reaches 2 points.       
     def game_winner(self):
         if self.player_one.score >= 2:
             print(f"\n{self.player_one.name.title()} Wins Game!")
